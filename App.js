@@ -1,13 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-
+import Header from './Component/Header';
+import Input from './Component/Input';
+import { Title } from 'react-native-paper';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+    <Header/>
+    <Title style={{textAlign:'center',margin:'10px'}}>Welcome To best To Do App!</Title>
+    <Input/>
+    </>
   );
 }
 
